@@ -1,0 +1,369 @@
+body {
+    background-color : transparent;
+    font: 1em sans-serif;
+    margin-right: 80;
+    margin-left: 80;
+    height: 100vh;
+    user-select: none;
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
+.logo {
+    float: left;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  } @media(max-width: 768px) {
+      .logo {
+        margin-left: 5px;
+      }
+    }
+
+.nav{
+    padding-top: 10px;
+}
+
+.nav ul li{
+
+    list-style-type: none;
+    float: right;
+    margin-left: 40;
+    
+} 
+.nav ul li a{
+    
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.nav a:hover {
+    color: orangered;    
+}
+
+.home{
+    padding-top: 100px;
+}
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("src/show/charwel1.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+        background: url("src/show/charwelG.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+        background: url("src/show/charwel2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+        background: url("src/show/charwel3.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+        background: url("src/show/charwel4.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(6) {
+      background: url("src/show/maiko.jpg")
+      no-repeat 50% / cover;
+  }
+  &:nth-of-type(7) {
+    background: url("src/show/maiko1.jpg")
+    no-repeat 50% / cover;
+}
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      p {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px skyblue;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.qt p{
+
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.memories{
+    padding: 10px;
+}
+
+.memories p {
+ 
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.contact{
+    padding: 10px;
+    
+}
+
+.contact p {
+ 
+    text-align: justify;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+:root {
+    --surface-color: rgb(252, 106, 53);
+    --curve: 40;
+  }
+  
+ 
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 4rem 4vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 70%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card-image {      
+    width:100%;
+    height: 80%;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card-overlay {
+    transform: translateY(0);
+  }
+  
+  .card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card-arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+      
+  
+  .card:hover .card-header {
+    transform: translateY(0);
+  }
+  
+  .card-thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card-title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: black;
+  }
+  
+  .card-tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  
+  .card-description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+
+  .card p{
+
+    font-style: inherit;
+    color: black;
+    
+  }
+
+  /* The Modal]*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 50px;
+  border: 1px solid #888;
+  width: 80%;
+  
+}
+
+.modal-content p{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 1;
+  line-height: 2;
+}
+
+
+.close {
+  color: orangered;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.message h1{
+  text-align: center;
+}
+
+ .click{
+  text-align: center;
+  cursor: pointer;
+}
