@@ -367,3 +367,31 @@ body {
   text-align: center;
   cursor: pointer;
 }
+
+
+
+.modal-login{
+
+  background-color: orange;
+  margin: 15% auto; 
+  padding: 50px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  border-radius: 14px;
+  
+}
+
+.loginBtn{
+
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10;
+  background-color: whitesmoke;
+  font-style: inherit;
+  font-size: bold;
+  color: orangered;
+  
+}
+
+

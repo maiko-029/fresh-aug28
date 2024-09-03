@@ -207,22 +207,47 @@
 
        </div>
 
+       <div class="modal" id="loginModal">
+          
+        <div class="modal-login">
+          
+          <span class="close">&times;</span>
+         
+
+            <h1>USE PINCODE</h1>
+            <input style="width: 250; height: 50;" type="number" name="picode" maxlength="6" placeholder="Enter our pin" id="pin">
+            <br>
+            <button class="loginBtn" id="loginBtn" onclick="validate()">CLICK ME LOVE!</button>
+
+      </div>
+       </div>
+
              
 
               <script>
                   // Get the modal
                   var modal = document.getElementById("myModal");
 
+                  //modal for login
+                  var login = document.getElementById("loginModal");
+
                   // Get the button that opens the modal
                   var btn= document.getElementById("myBtn");
+
+                  //get btn after inpute pin
+                  var loginbtn= document.getElementById("loginBtn");
 
                   // Get the <span> element that closes the modal
                   var span = document.getElementsByClassName("close")[0];
 
-                  // When the user clicks on the button, open the modal
+                  // When the user clicks on the button, open the modal for login
                   btn.onclick = function() {
-                    modal.style.display = "block";
+                    login.style.display = "block";
                   }
+
+                  
+
+                  
 
                   // When the user clicks on <span> (x), close the modal
                   span.onclick = function() {
@@ -235,6 +260,40 @@
                       modal.style.display = "none";
                     }
                   }
+
+                  //for login modal
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                    if (event.target == login) {
+                      login.style.display = "none";
+                    }
+                  }
+
+                     function validate(){
+
+                        var pin = document.getElementById("pin").value;
+                        
+                        if ( pin == "141997"){
+
+                          alert ("PIN IS CORRECT");
+                          modal.style.display = "block";
+                          login.style.display = "none"; // Redirecting to other page.
+                          return false;
+                        }
+                        else{
+                        
+                        alert("WROOOOOONG");
+                        // Disabling fields after 3 attempts.
+                       
+                        }
+                      }
+                  
+
+
 
               </script>
  
