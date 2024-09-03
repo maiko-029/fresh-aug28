@@ -404,6 +404,10 @@ body {
   font-size: bold;
   color: orangered;
   
+} 
+
+input{
+  border-radius: 14px;
 }
 
 

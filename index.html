@@ -242,6 +242,43 @@
              
 
               <script>
+
+                    document.addEventListener('contextmenu',(e)=>{
+                        e.preventDefault();
+                      }
+                      );
+                      document.onkeydown = function(e) {
+                          if(event.keyCode == 123) {
+                            return false;
+                          }
+                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                            return false;
+                          }
+                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                            return false;
+                          }
+                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                            return false;
+                          }
+                          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                            return false;
+                          }
+                    }
+                    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+                    document.onkeydown = function(e) { 
+                        if(event.keyCode == 123) { 
+                        return false; 
+                        } 
+                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+                        return false; 
+                        } 
+                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+                        return false; 
+                        } 
+                        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+                        return false; 
+                        } 
+                    } 
                   // Get the modal
                   var modal = document.getElementById("myModal");
 
@@ -263,9 +300,6 @@
                   }
 
                   
-
-                  
-
                   // When the user clicks on <span> (x), close the modal
                   span.onclick = function() {
                     modal.style.display = "none";
