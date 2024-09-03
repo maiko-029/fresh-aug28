@@ -344,6 +344,18 @@ body {
   line-height: 2;
 }
 
+.modal-content h6 {
+
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.modal-content hr{
+ 
+  color: orange;
+
+}
 
 .close {
   color: orangered;
