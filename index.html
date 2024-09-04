@@ -206,7 +206,7 @@
 
                     
               <h4>Hi Mahal,</h4>
-              <p>Hi weng, I miss youu so much weng. I just wanted to let you know that I miss you and hope you’re doing well. Take care.
+              <p>Hi weng, I miss youu so much weng. I just wanted to let you know that I miss you and hope you’re doing well.
                   I dont have any update na sa imong adlaw nga mga lakaw og nangahitabo mingaw nako chika2 nimo weng mingaw nako sa imong nawng og sa imong tingog.
                   I’ve been reminiscing about the good times we had weng tanaw2 nalang kos atong mga pictures and videos maka sad kaayo nga ge limot nako nimo.
                   wala nako kabalo og unsaon og asa taka ma contact kay ge block naman ko nimo tanan sa text wala sabkay response
@@ -215,6 +215,24 @@
                   I hope you’re finding happiness and peace. Take care.
             </p>
               <h4>Forever and always,</h4>
+              <h3>Poy!</h3>
+    <hr>
+              <h6>Day 5</h6>
+
+                    
+              <h4>Hi Mahal,</h4>
+              <p> Hi weng, kamusta naman ka dhaa ngano wala pamankay reply2 mingaw nako nimo weng sobraaaa nga kamingaw bisan unsaon nakog lingaw akong adlaw
+                madumdum gyud taka permi mo kalit nalang ka down akong adlaw og madumdum taka wala nako kasabot og unsa ni akong gebati nga kasakit
+                tana kabalo ka og unsa taka kamingaw. For 5 days nga wala tay contact na realize kaayo nako ang kawadon og pagtagad sa usa ka gehigugma kaayo nimo nga tao
+                kabalo baya ka weng nga ikaw nalang gyud akong kaparis sa tanang butang sakong kinabuhi. Karong panahon nga wala kas ako nakita nako akong kaugalingon nga
+                dili mahimotang sige ra huwat nga mag message ka nga naay mo notify. Mahadlok ko basin makakita kag tao nga malingaw ka maka hatag kalipay nga 
+                wala nako nahatag mahadlok ko nga malipay kay ganahan ramansabko magmalipayon kas kinabuhi weng unfair lang kaayo paras ako 
+                nga dili na ako. Nag huwat ragehapon ko weng nga mag ka communicate ta og balik para maka dungog og makabalo kos mga ganap sa imong life ron.
+                Tana mag ka storyaanay ta usab weng para mag kabalik nata. You’re always in my thoughts weng. Love takaa kaayooo weng
+                walay nagbago ana weng.
+
+            </p>
+              <h4>With all my love,</h4>
               <h3>Poy!</h3>
               
              
@@ -241,113 +259,8 @@
 
              
 
-              <script>
-
-                    document.addEventListener('contextmenu',(e)=>{
-                        e.preventDefault();
-                      }
-                      );
-                      document.onkeydown = function(e) {
-                          if(event.keyCode == 123) {
-                            return false;
-                          }
-                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                            return false;
-                          }
-                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                            return false;
-                          }
-                          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                            return false;
-                          }
-                          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                            return false;
-                          }
-                    }
-                    document.addEventListener('contextmenu', event=> event.preventDefault()); 
-                    document.onkeydown = function(e) { 
-                        if(event.keyCode == 123) { 
-                        return false; 
-                        } 
-                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
-                        return false; 
-                        } 
-                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
-                        return false; 
-                        } 
-                        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
-                        return false; 
-                        } 
-                    } 
-                  // Get the modal
-                  var modal = document.getElementById("myModal");
-
-                  //modal for login
-                  var login = document.getElementById("loginModal");
-
-                  // Get the button that opens the modal
-                  var btn= document.getElementById("myBtn");
-
-                  //get btn after inpute pin
-                  var loginbtn= document.getElementById("loginBtn");
-
-                  // Get the <span> element that closes the modal
-                  var span = document.getElementsByClassName("close")[0];
-
-                  // When the user clicks on the button, open the modal for login
-                  btn.onclick = function() {
-                    login.style.display = "block";
-                  }
-
-                  
-                  // When the user clicks on <span> (x), close the modal
-                  span.onclick = function() {
-                    modal.style.display = "none";
-                  }
-
-                  // When the user clicks anywhere outside of the modal, close it
-                  window.onclick = function(event) {
-                    if (event.target == modal) {
-                      modal.style.display = "none";
-                    }
-                  }
-
-                  //for login modal
-                  span.onclick = function() {
-                    modal.style.display = "none";
-                  }
-
-                  // When the user clicks anywhere outside of the modal, close it
-                  window.onclick = function(event) {
-                    if (event.target == login) {
-                      login.style.display = "none";
-                    }
-                  }
-
-                     function validate(){
-
-                        var pin = document.getElementById("pin").value;
-                        
-                        if ( pin == "141997"){
-
-                          alert ("PIN IS CORRECT");
-                          modal.style.display = "block";
-                          login.style.display = "none"; // Redirecting to other page.
-                          return false;
-                        }
-                        else{
-                        
-                        alert("WROOOOOONG");
-                        // Disabling fields after 3 attempts.
-                       
-                        }
-                      }
-                  
-
-
-
-              </script>
- 
+             
+       <script src="modal.js"></script>
 
     </body>
 </html>
