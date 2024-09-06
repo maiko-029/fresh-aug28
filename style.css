@@ -188,8 +188,8 @@ body {
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin: 4rem 4vw;
+    gap: 1rem;
+    margin: 4rem 6vw;
     padding: 0;
     list-style-type: none;
   }
@@ -202,6 +202,15 @@ body {
     overflow: hidden;
     text-decoration: none;
   }
+
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  
   
   .card-image {      
     width:100%;
@@ -362,7 +371,7 @@ body {
 
 .modal-login{
 
-  background-color: orange;
+  background: linear-gradient(to left, #00ffff, #ff02ff);
   margin: 15% auto; 
   padding: 50px;
   border: 1px solid #888;
@@ -377,10 +386,10 @@ body {
   justify-content: center;
   padding: 10px;
   margin-top: 10;
-  background-color: whitesmoke;
+  background-color: transparent;
   font-style: inherit;
   font-size: bold;
-  color: orangered;
+  color: black;
   
 } 
 
