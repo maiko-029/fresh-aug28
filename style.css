@@ -19,14 +19,15 @@ body {
 .last p{
 
 text-align: justify;
-
+letter-spacing: 1;
+line-height: 2;
 
 }
 
 .last p i{
-
-  font-weight: bold;
   
+  font-weight: bold;
+
 }
 
 
