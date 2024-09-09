@@ -1,16 +1,39 @@
 body {
     background-color : transparent;
     font: 1em sans-serif;
-    margin-right: 80;
-    margin-left: 80;
     height: 100vh;
     user-select: none;
 
 }
 
+.last{
+
+  justify-content:center;
+  text-align: center;
+  max-width: 700px;
+  margin:0 auto;
+  width:90%;
+  padding: 50px;
+}
+
+.last p{
+
+text-align: justify;
+
+
+}
+
+.last p i{
+
+  font-weight: bold;
+  
+}
+
+
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
+    
   }
   @media only screen and (min-width: 768px) {
     /* For desktop: */
